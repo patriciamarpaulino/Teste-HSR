@@ -6,13 +6,14 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Dosis:wght@300;400&display=swap');
 
+
 body {
     margin: 0;
     padding: 0;
     font-family: "Dosis", sans-serif;
     background-color: #ffffff;
     overflow: hidden;
-
+    
 }
 
 .header {
@@ -203,6 +204,13 @@ body {
 
 /*RESPONSIVIDADE PARA AS TELAS */
 @media screen and (max-width: 768px) {
+    html, body {
+        overflow-x: hidden; /* Evita a barra de rolagem horizontal */
+        width: 100%;
+        min-height: 100vh;
+        margin-right: auto;
+    }
+
     .header {
         flex-direction: column;
         align-items: center;
@@ -217,7 +225,7 @@ body {
     .title {
         text-align: center;
         margin-top: 10px;
-        font-size: 14px;
+        font-size: 10px;
     }
 
     .intro-text {
@@ -227,22 +235,24 @@ body {
 
     .subtitle {
         font-size: 28px;
-        margin-bottom: 20px;
+        margin-bottom: 10px;
+        margin-top: -70px;
     }
 
     .social-icons {
         margin-top: 20px;
         justify-content: center;
+        align-items: first baseline;
     }
 
     .image-container {
-        text-align: center; /* Centralizar a imagem */
+        text-align: left;
     }
 
     .image-container img {
-        max-width: 0%;
+        max-width: 100%;
         height: auto;
-        max-height: 1px; /* Reduzir a altura máxima da imagem */
+        max-height: 300px;
     }
 
     .pilares-section {
