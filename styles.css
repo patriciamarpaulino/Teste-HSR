@@ -33,7 +33,7 @@ body {
 .title {
     text-align: right;
     margin-right: 2px;
-    font-size: 24px;
+    font-size: 16px;
 }
 
 .title-text  {
@@ -203,27 +203,8 @@ body {
 
 /*RESPONSIVIDADE PARA AS TELAS */
 @media only screen and (max-width: 320px) and (max-width: 768px) {
-    .header {
-        width: 100%;
-}
-}
+  
 
-.content img responsive-image {
-    display: none;
-}
 
-.title-text {
-    color: #62b699;
-    font-family: 'Dosis', sans-serif;
-    text-align: center;
-    margin-right: 150px;
-    font-size: 16px;
 
 }
-
-.content {
-    padding: 20px;
-
-}
-
-
